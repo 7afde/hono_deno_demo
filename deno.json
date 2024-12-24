@@ -1,0 +1,18 @@
+{
+  "imports": {
+    "@hono": "jsr:@hono/hono@^4.6.5",
+    "@hono-pino": "npm:hono-pino@^0.4.0",
+    "@hono/zod-openapi": "npm:@hono/zod-openapi@^0.16.4",
+    "@pino": "npm:pino@^9.5.0",
+    "@stoker": "npm:stoker@^1.2.7",
+    "@pino-pretty": "npm:pino-pretty@^11.3.0"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-sys --watch src/index.ts",
+    "lint": "deno lint --unstable"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
