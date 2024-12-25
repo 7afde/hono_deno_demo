@@ -1,5 +1,6 @@
 {
   "imports": {
+    "@antfu/eslint-config": "npm:@antfu/eslint-config@^3.12.1",
     "@hono": "jsr:@hono/hono@^4.6.5",
     "@hono-pino": "npm:hono-pino@^0.4.0",
     "@hono/zod-openapi": "npm:@hono/zod-openapi@^0.16.4",
@@ -8,7 +9,7 @@
     "@pino-pretty": "npm:pino-pretty@^11.3.0"
   },
   "tasks": {
-    "start": "deno run --allow-net --allow-env --allow-sys --watch src/index.ts",
+    "start": "deno run --allow-net --allow-env --env-file --allow-sys --watch src/index.ts",
     "lint": "deno lint --unstable"
   },
   "compilerOptions": {
